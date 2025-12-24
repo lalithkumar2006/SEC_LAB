@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Dashboard from './components/dashboard'
 import Counter from './components/Counter'
+import Table from './components/Table'
 
 function App(){
   const [name,setName] = useState("LK")
@@ -17,11 +18,14 @@ function App(){
 
   return(
     <>
-    <Dashboard name={name} occ={occ} nameChange={nameChange}/>
-    <Counter/>
+    <Table/>
     </>
   )
 
 }
 
 export default App
+
+
+
+
